@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
   <title>YouTube</title>
 
   <!-- Main Styling -->
@@ -25,9 +25,23 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+  <script src="js/jquery.js"></script>
+  <script>
+    // the window width to display :  1 = yes, 0 = no
+    var showWidth = 1;
+    if(showWidth == 1){
+          $(document).ready(function (){
+              $(window).resize(function(){
+                  var width = $(window).width();
+                  document.getElementById("output_width").innerHTML='Window Width:'+width.toString();
+              });
+          });
+    }
+    </script>
 </head>
 
 <body>
+<div id="output_width"></div><!--Widow width inserted here-->
 <header>
   <div class="container-fluid">
     <div class="row">
@@ -39,7 +53,7 @@
         <form action=""><input type="text" placeholder="Type to search"></form>
       </div>
       <div class="col-md-5">
-        <ul>
+        <ul id="user-info">
           <li><a href="#" class="button">Upload</a></li>
           <li>
             <ul class="notification">
@@ -50,7 +64,7 @@
           <li>
             <img src="images/profile.png" alt="">
             <div>
-              <p>John Doe</p>
+              <p id="username">Laetitia Carquet</p>
               <p>9 Subscribers</p>
               <a href="#">Log out</a>
             </div>
@@ -73,8 +87,8 @@
         <div class="area">
           <div class="mask">
             <div class="vertical-align">
-              <i class="fa fa-play-circle"></i>
-              <p>Play now</p>
+              <i class="fa fa-play-circle"><p>Play now</p></i>
+              
             </div>
             <img src="images/video.png" alt="video" class="img-responsive">
             <span class="duration">44:03</span>
