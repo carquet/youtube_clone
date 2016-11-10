@@ -93,10 +93,10 @@ input {
 }
 
 .notification {
-	float: left;
-	margin-left: 110px;
-	padding-top: 15px;
-	padding-bottom: 10px;
+	position: absolute;
+	right: 240px;
+	top: 20px;
+
 }
 
 .notification li {
@@ -133,7 +133,9 @@ input {
 #user-info li:nth-child(3) img {
 	float: left;
 	margin-right: 20px;
-	width: 60px;
+	width: 50px;
+	border-radius: 60%;
+	border:1px solid #e21725;
 }
 #user-info li:nth-child(3) div {
 	display: inline-block;
