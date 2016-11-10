@@ -43,28 +43,32 @@
 <body>
 <div id="output_width"></div><!--Widow width inserted here-->
 
-  <nav id="side-wrapper">
-    <ul class="sidebar">
-      <li class="menu">Menu</li>
-      <li><a href="#"><i class="fa fa-eyes"></i> What to watch</a></li>
-      <li><a href="#"><i class="fa fa-user"></i> My Channel</a></li>
-      <li><a href="#"><i class="fa fa-clock-o"></i> History</a></li>
-      <li><a href="#"><i class="fa fa-repeat"></i> Watch Later</a></li>
-    </ul>
-    <ul class="sidebar">
-      <li class="menu">Playlist</li>
-      <li><a href="#"><i class="fa fa-headphones"></i> Best of David Guetta<p>David Guetta</p></a></li>
-      <li><a href="#"><i class="fa fa-film"></i> Favourite videos <p>Check your favourite videos</p></a></li>
-      <li><a href="#"><i class="fa fa-thumg-o-up"></i> Liked videos <p>Reach all the videos you like</p></a></li>
-    </ul>
-    <ul class="sidebar">
-      <li class="menu">Subscriptions</li>
-      <li><a href="#"><img src="images/shoes.png"> Nike shoes</a></li>
-      <li><a href="#"><img src="images/shakira.png"> Shakira VEVO</a></li>
-      <li><a href="#"><img src="images/nike.png"> Nike football</a></li>
-      
-    </ul>
-  </nav> <!-- end of side-bar -->
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar">  
+      <a href="#" id="menu-close" class="pull-right toggle"><img src="images/X.png"></a>    
+      <ul>
+        <li class="menu">Menu</li>
+        <li><a href="#"><i class="fa fa-eyes"></i> What to watch</a></li>
+        <li><a href="#"><i class="fa fa-user"></i> My Channel</a></li>
+        <li><a href="#"><i class="fa fa-clock-o"></i> History</a></li>
+        <li><a href="#"><i class="fa fa-repeat"></i> Watch Later</a></li>
+      </ul>
+      <ul id="playlist">
+        <li class="menu">Playlists</li>
+        <li><a href="#"><i class="fa fa-headphones"></i> Best of David Guetta<p>David Guetta</p></a></li>
+        <li><a href="#"><i class="fa fa-film"></i> Favourite videos <p>Check your favourite videos</p></a></li>
+        <li><a href="#"><i class="fa fa-thumg-o-up"></i> Liked videos <p>Reach all the videos you like</p></a></li>
+      </ul>
+      <ul id="subs">
+        <li id="title">Subscriptions</li>
+        <li><a href="#"><img src="images/shoes.png"> Nike shoes</a></li>
+        <li><a href="#"><img src="images/shakira.png"> Shakira VEVO</a></li>
+        <li><a href="#"><img src="images/nike.png"> Nike football</a></li>
+      </ul>
+    </ul><!-- end of sidebar -->
+  </nav> <!-- end of side-bar wrapper-->
+
+
 <header>
   <div class="container-fluid">
     <div class="row">
@@ -140,7 +144,7 @@
                 <span class="duration">44:03</span>
             </div>
             <h2>Daft Punk -Get lucky</h2>
-            <p><span>6 days ago</span> By <a href="#">DaftPunkVEO</a>- 83,123,132 views</p>
+            <p><span>6 days ago</span> By <a href="#">DaftPunkVEOVEO</a>- 83,123,132 views</p>
           </div>   
   
       <ul class="mini">
@@ -156,7 +160,7 @@
               <span class="duration">44:03</span>
           </div>
             <h4>Shakira -Waka Waka</h4>
-            <p><span>2 weeks ago</span> By <a href="#">DaftPunkVEO</a></p>
+            <p><span>2 weeks ago</span> By <a href="#">ShakiraVEOVEO</a></p>
             <p class="views">21 345 678</p> 
 
           <div class="area">
@@ -418,7 +422,7 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/menu.js"></script>
-  
+
 </body>
 
 </html>
