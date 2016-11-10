@@ -222,7 +222,38 @@ p.views {
 	margin: 0;
 	padding: 0;
 	color: #757a80;
-	line-height: inherit;
+}
+
+.area:hover .mask {
+	/*display: block;*/
+	cursor: pointer;
+	opacity: 100;
+}
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	/*transform: translate(-50%);
+	-webkit-transform: translateY;*/
+}
+
+.mask {
+	position: absolute;
+	background-color: rgba(226, 23, 37, 0.9);
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0;
+}
+
+.mask p {
+	color: #fff;
+	font-weight: 700;
+}
+
+.mask i {
+	font-size: 18px;
+	color: #fff;
 }
 
 
