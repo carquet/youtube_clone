@@ -187,6 +187,7 @@ input {
 
 .main-video h2 {
 	margin: 20px 0;
+	text-align: center;
 }
 
 .area {
@@ -233,8 +234,13 @@ p.views {
 .vertical-align {
 	position: relative;
 	top: 50%;
-	/*transform: translate(-50%);
-	-webkit-transform: translateY;*/
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	/*Transform function for a 2d translation which 
+	moves an element on the y-axis by the given value. 
+	Note that the y-axis increases vertically downwards: 
+	positive lengths shift the element down, while negative lengths shift it up.*/
 }
 
 .mask {
@@ -247,13 +253,37 @@ p.views {
 }
 
 .mask p {
+	display: absolute;
 	color: #fff;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .mask i {
-	font-size: 18px;
+	font-size: 60px;
 	color: #fff;
 }
 
+.mini {
+	list-style: none;
+}
 
+.mini h4 {
+	margin-top: 13px;
+}
+
+.mini p {
+	font-size: 12px;
+	margin-top: 6px;
+}
+
+.mini i {
+	font-size: 50px,
+}
+
+.mini  .duration {
+	padding: 8px 20px;
+}
+
+.mini -mask p {
+	display: none;
+}
