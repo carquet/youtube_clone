@@ -185,7 +185,8 @@ input {
 
 /*MAIN CONTENT*/
 
-.main-video h2 {
+
+.main-videos h2 {
 	margin: 20px 0;
 	text-align: center;
 }
@@ -211,7 +212,7 @@ p.views {
 
 }
 
-.videos {
+.video {
 	font-weight: 700;
 }
 
@@ -286,4 +287,22 @@ p.views {
 
 .mini -mask p {
 	display: none;
+}
+
+
+/*CHANNEL*/
+.channel-bio hr {
+	margin: 20px 0;
+}
+
+.channel-bio p {
+	text-align: justify;
+}
+
+.channel-bio .button {
+	margin-top: 10px;
+}
+
+.channel-name img {
+	margin-right: 10px;
 }
